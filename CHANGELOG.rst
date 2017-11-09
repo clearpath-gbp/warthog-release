@@ -2,6 +2,11 @@
 Changelog for package warthog_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.2 (2017-11-09)
+------------------
+* [warthog_msgs] Updated messages for changes to platform.
+* Contributors: Tony Baltovski
+
 0.0.1 (2016-10-03)
 ------------------
 * Initial commit.
