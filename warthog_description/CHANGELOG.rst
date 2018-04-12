@@ -2,6 +2,12 @@
 Changelog for package warthog_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.3 (2018-04-12)
+------------------
+* Added track configuration.
+* Added track meshes
+* Contributors: Dave Niewinski, Tony Baltovski
+
 0.0.2 (2017-11-09)
 ------------------
 * Added imu link.  Updated inertias for new links
