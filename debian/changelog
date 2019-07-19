@@ -1,0 +1,38 @@
+ros-melodic-warthog-control (0.1.1-2stretch) stretch; urgency=high
+
+
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Thu, 18 Jul 2019 07:00:00 -0000
+
+ros-melodic-warthog-control (0.1.0-2stretch) stretch; urgency=high
+
+  * Minor syntax changes for build warnings.  Changed hardware interfaces.  Added inorder processing for xacro
+  * Contributors: Dave Niewinski
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Thu, 12 Apr 2018 07:00:00 -0000
+
+ros-melodic-warthog-control (0.0.3-2stretch) stretch; urgency=high
+
+  * [warthog_control] Fixed incorrect joint name.
+  * Added optional config load for teleop.launch
+  * Added track configuration.
+  * Contributors: Michael Hosmar, Tony Baltovski
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Thu, 12 Apr 2018 07:00:00 -0000
+
+ros-melodic-warthog-control (0.0.2-2stretch) stretch; urgency=high
+
+  * [warthog_control] Set locks to nothing to appease twist_mux.
+  * Added Novatel Smart6 GPS accessory and updated localization to use IMU.
+  * Contributors: Michael Hosmar, Tony Baltovski
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Thu, 09 Nov 2017 08:00:00 -0000
+
+ros-melodic-warthog-control (0.0.1-2stretch) stretch; urgency=high
+
+  * Initial commit.
+  * Contributors: Tony Baltovski
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Mon, 03 Oct 2016 07:00:00 -0000
+
+
