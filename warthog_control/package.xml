@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>warthog_control</name>
-  <version>0.1.1</version>
+  <version>0.1.2</version>
   <description>Controllers for Warthog</description>
   <maintainer email="tbaltovski@clearpathrobotics.com">Tony Baltovski</maintainer>
 
@@ -20,9 +20,7 @@
   <run_depend>robot_localization</run_depend>
   <run_depend>teleop_twist_joy</run_depend>
   <run_depend>topic_tools</run_depend>
-  <run_depend>rosserial_server</run_depend>
   <run_depend>twist_mux</run_depend>
-
 
   <export>
   </export>
