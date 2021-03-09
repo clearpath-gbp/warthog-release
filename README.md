@@ -1,3 +1,29 @@
+## warthog (melodic) - 0.1.3-1
+
+The packages in the `warthog` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -r melodic -t melodic warthog` on `Tue, 09 Mar 2021 17:02:58 -0000`
+
+These packages were released:
+- `warthog_control`
+- `warthog_description`
+- `warthog_msgs`
+
+Version of package(s) in repository `warthog`:
+
+- upstream repository: https://github.com/warthog-cpr/warthog.git
+- release repository: https://github.com/clearpath-gbp/warthog-release.git
+- rosdistro version: `0.1.2-1`
+- old version: `0.1.2-1`
+- new version: `0.1.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.1`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.20.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## warthog (kinetic) - 0.1.3-1
 
 The packages in the `warthog` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release -r kinetic -t kinetic warthog` on `Tue, 09 Mar 2021 16:41:37 -0000`
