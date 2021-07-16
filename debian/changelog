@@ -1,0 +1,75 @@
+ros-melodic-warthog-description (0.1.4-1bionic) bionic; urgency=high
+
+  * CPR extras (#17 <https://github.com/warthog-cpr/warthog/issues/17>)
+    * cpr_extras
+    * cpr_extras
+    * remove cpr_extras.urdf
+    Co-authored-by: Ebrahim Shahrivar <mailto:eshahrivar@clearpath.ai>
+  * Add an envar to set the paint colour of the URDF (#16 <https://github.com/warthog-cpr/warthog/issues/16>)
+    * Add the WARTHOG_COLOR envar, with options 'yellow' (default) and 'olive_green'
+    * Simplify the paint options, add orange and sand as additional choices based on feedback from sales on the available colours.
+  * [warthog_description] Added generator accessory.
+  * Contributors: Chris I-B, Ebrahim Shahrivar, Tony Baltovski
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Fri, 16 Jul 2021 04:00:00 -0000
+
+ros-melodic-warthog-description (0.1.3-1bionic) bionic; urgency=high
+
+  * Bumped CMake version to avoid author warning.
+  * Contributors: Tony Baltovski
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Tue, 09 Mar 2021 05:00:00 -0000
+
+ros-melodic-warthog-description (0.1.2-1bionic) bionic; urgency=high
+
+  * Add the legacy namespace mode attribute to the ros control plugin. This suppresses a warning in gazebo
+  * Contributors: Chris I-B
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Thu, 17 Sep 2020 04:00:00 -0000
+
+ros-melodic-warthog-description (0.1.1-1bionic) bionic; urgency=high
+
+  * Tuned wheel friction to reduce drift when stopped
+  * Removed gazebo wheel physics as it was causing strangeness when turning, and defaults seem to work
+  * Contributors: Dave Niewinski, L. James Azzalini, Tony Baltovski
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Thu, 18 Jul 2019 04:00:00 -0000
+
+ros-melodic-warthog-description (0.1.0-1bionic) bionic; urgency=high
+
+  * Lowered the effort and increase the limits to make the diff units more accurate
+  * Updated link stl
+  * Minor syntax changes for build warnings.  Changed hardware interfaces.  Added inorder processing for xacro
+  * Contributors: Dave Niewinski
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Thu, 12 Apr 2018 04:00:00 -0000
+
+ros-melodic-warthog-description (0.0.3-1bionic) bionic; urgency=high
+
+  * Added track configuration.
+  * Added track meshes
+  * Contributors: Dave Niewinski, Tony Baltovski
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Thu, 12 Apr 2018 04:00:00 -0000
+
+ros-melodic-warthog-description (0.0.2-1bionic) bionic; urgency=high
+
+  * Added imu link.  Updated inertias for new links
+  * Changed the URDF_EXTRAS variable so it is more flexible for external packages
+  * Completely redid most meshes and added the bulkhead and arm mounting point. Added configs for both as well. Took meshes from 4 Mb down to 1 (total)
+  * Added Novatel Smart6 GPS accessory and updated localization to use IMU.
+  * [warthog_description] Removed joint_state_publisher as run_depend.
+  * [warthog_description] Updated URDF colours and links.
+  * Fixed missing right suspension link.
+  * Contributors: Dave Niewinski, Tony Baltovski
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Thu, 09 Nov 2017 05:00:00 -0000
+
+ros-melodic-warthog-description (0.0.1-1bionic) bionic; urgency=high
+
+  * Initial commit.
+  * Contributors: Tony Baltovski
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Mon, 03 Oct 2016 04:00:00 -0000
+
+
