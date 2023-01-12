@@ -1,3 +1,29 @@
+## warthog (noetic) - 0.1.6-1
+
+The packages in the `warthog` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -t noetic -r noetic warthog` on `Thu, 12 Jan 2023 17:49:00 -0000`
+
+These packages were released:
+- `warthog_control`
+- `warthog_description`
+- `warthog_msgs`
+
+Version of package(s) in repository `warthog`:
+
+- upstream repository: https://github.com/warthog-cpr/warthog.git
+- release repository: https://github.com/clearpath-gbp/warthog-release.git
+- rosdistro version: `0.1.5-1`
+- old version: `0.1.5-1`
+- new version: `0.1.6-1`
+
+Versions of tools used:
+
+- bloom version: `0.11.2`
+- catkin_pkg version: `0.5.2`
+- rosdep version: `0.22.1`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## warthog (melodic) - 0.1.6-1
 
 The packages in the `warthog` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -t melodic -r melodic warthog` on `Thu, 12 Jan 2023 17:45:24 -0000`
