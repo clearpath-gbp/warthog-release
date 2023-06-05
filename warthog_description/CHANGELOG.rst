@@ -2,6 +2,11 @@
 Changelog for package warthog_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.7 (2023-06-05)
+------------------
+* added outdoornav enable variable and hardware kit selector for urdf
+* Contributors: José Mastrangelo
+
 0.1.6 (2023-01-12)
 ------------------
 * Change the GPS plugin reference heading to 90 so it's ENU
