@@ -2,6 +2,9 @@
 Changelog for package warthog_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.8 (2023-09-19)
+------------------
+
 0.1.7 (2023-06-05)
 ------------------
 * added outdoornav enable variable and hardware kit selector for urdf
