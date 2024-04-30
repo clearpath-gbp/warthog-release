@@ -225,7 +225,13 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 ${side*PI/2}"/>
         <geometry>
-          <mesh filename="package://warthog_description/meshes/fenders.stl" />
+          <mesh filename="package://warthog_description/meshes/fenders-collision.stl" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 ${-side*0.02} 0.52" rpy="0 0 ${side*PI/2}"/>
+        <geometry>
+          <box size="0.28 0.95 0.024"/>
         </geometry>
       </collision>
     </link>
@@ -238,14 +244,95 @@
       <dynamics damping="100" friction="0.5"/>
     </joint>
 
+    <link name="${prefix}_diff_unit_buttons_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://warthog_description/meshes/buttons.stl"/>
+        </geometry>
+        <material name="red"><color rgba="0.9 0.0 0.0 1.0" /></material>
+      </visual>
+      <collision>
+        <origin xyz="0.0395 0.4315 0.520" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.0205" length="0.014"/>
+          <material name="red"><color rgba="0.9 0.0 0.0 1.0" /></material>
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0395 -0.4315 0.520" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.0205" length="0.014"/>
+          <material name="red"><color rgba="0.9 0.0 0.0 1.0" /></material>
+        </geometry>
+      </collision>
+    </link>
+    <joint name="${prefix}_diff_unit_buttons" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 ${side*PI/2}"/>
+      <parent link="${prefix}_diff_unit_link"/>
+      <child link="${prefix}_diff_unit_buttons_link"/>
+    </joint>
+
+    <!-- Wi-Fi and Controller Antenna -->
+    <link name="${prefix}_diff_unit_antenna_link">
+      <visual>
+        <material name="light_grey" />
+        <geometry>
+          <mesh filename="package://warthog_description/meshes/antenna_${prefix}.stl"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.096 ${side*0.431} 0.6635" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.01697" length="0.301"/>
+        </geometry>
+        <material name="light_grey" />
+      </collision>
+    </link>
+    <joint name="${prefix}_diff_unit_antenna_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 ${side*PI/2}"/>
+      <parent link="${prefix}_diff_unit_link" />
+      <child link="${prefix}_diff_unit_antenna_link" />
+    </joint>
+
+    <!-- E-stop Antenna -->
+    <xacro:if value="${side == -1}">
+      <link name="${prefix}_diff_unit_estop_antenna_link">
+        <visual>
+          <material name="light_grey"/>
+          <geometry>
+            <mesh filename="package://warthog_description/meshes/antenna_estop.stl"/>
+          </geometry>
+        </visual>
+        <collision>
+          <material name="light_grey"/>
+          <origin xyz="-0.096 0.4315 0.572" rpy="0 0 0"/>
+          <geometry>
+            <cylinder radius="0.0103" length="0.118"/>
+          </geometry>
+        </collision>
+      </link>
+      <joint name="${prefix}_diff_unit_estop_antenna_joint" type="fixed">
+        <origin xyz="0 0 0" rpy="0 0 ${side*PI/2}"/>
+        <parent link="${prefix}_diff_unit_link"/>
+        <child link="${prefix}_diff_unit_estop_antenna_link"/>
+      </joint>
+    </xacro:if>
+
     <link name="${prefix}_diff_unit_headlight_link">
       <visual>
-        <origin xyz="0 ${side*-0.0244} 0" rpy="0 0 0"/>
+        <origin xyz="0 ${side*-0.029} 0" rpy="0 0 0"/>
         <geometry>
           <mesh filename="package://warthog_description/meshes/light.stl" />
         </geometry>
         <material name="white"><color rgba="0.9 0.9 0.9 1.0" /></material>
       </visual>
+      <collision>
+        <origin xyz="0 ${side*-0.022} 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://warthog_description/meshes/light-collision.stl" />
+        </geometry>
+        <material name="white"><color rgba="0.9 0.9 0.9 1.0" /></material>
+      </collision>
     </link>
     <joint name="${prefix}_diff_unit_headlight_joint" type="fixed">
       <parent link="${prefix}_diff_unit_link" />
@@ -265,12 +352,19 @@
 
     <link name="${prefix}_diff_unit_taillight_link">
       <visual>
-        <origin xyz="0 ${side*-0.0244} 0" rpy="0 0 ${side*PI}"/>
+        <origin xyz="0 ${side*-0.029} 0" rpy="0 0 ${side*PI}"/>
         <geometry>
           <mesh filename="package://warthog_description/meshes/light.stl" />
         </geometry>
         <material name="red"><color rgba="0.9 0.0 0.0 1.0" /></material>
       </visual>
+      <collision>
+        <origin xyz="0 ${side*-0.022} 0" rpy="0 0 ${side*PI}"/>
+        <geometry>
+          <mesh filename="package://warthog_description/meshes/light-collision.stl" />
+        </geometry>
+        <material name="red"><color rgba="0.9 0.0 0.0 1.0" /></material>
+      </collision>
     </link>
     <joint name="${prefix}_diff_unit_taillight_joint" type="fixed">
       <parent link="${prefix}_diff_unit_link" />
